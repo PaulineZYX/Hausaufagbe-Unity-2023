@@ -1,0 +1,34 @@
+Setup:
+Geladen werden muss die MainMenu scene.
+Es gibt nur ein stript und in dem skript befinden sich die funktionen vpm menü. (welche auch komentiert sind)
+Hinweis: Wenn man start drückt wird der lade balken kurz rechts in der ecke angezeigt, da die scene nicht so viel inhalt hat und nichts leistung viel leistung braucht. (kamm also sein das man es mehrfach testen muss.)
+
+
+
+Anforderung/Aufgaben die erfüllt wurden:
+
+Projekt-Setup:
+-Das Projekt ist auf einem Git Repository committed, mit korrekt aufgesetztem as gitIgnore-File
+
+-Das Repository hat mindestens drei Pushed Changes, die jeweils mindestens eine Unter-Aufgabe erfüllen
+
+-Der Code ist in eigenen Worten kommentiert, sodass ich sehen kann, dass du den Code verstehst (Richtlinie: 2 Zeilen Comments pro 5 Zeilen Code)
+
+
+Multi Scene Setup:
+-Es gibt vier Szenen: Startup, Manager, MainMenu, Gameplay. 
+
+-Die Startup-Szene lädt bei Spielstart automatisch additiv zuerst die Manager-Szene, dann die MainMenu Szene.
+
+-Klickt man im Main Menu auf den “Start”-Button, wird erst die MainMenu-Szene entladen, dann die Gameplay-Szene geladen. Drückt man in der Gameplay-Szene den Escape-Button auf der Tastatur, wird die Gameplay-Szene entladen und die Main Menu Szene geladen.
+
+-Während Szenen laden wird ein Loading Screen angezeigt.
+
+
+UI Setup:
+-Es existiert je ein Canvas für das MainMenu und für das Inventar. Sie skalieren mit der Screen Size, haben eine Default-Auflösung von Full HD (1920 x 1080), und UI-Elemente haben immer das gleiche Verhältnis zur Screenhöhe.
+
+Particle Systems:
+-Es gibt Prefabs von je einem dieser Partikel-Systeme:
+Particle-System 1: stößt Particles aus, wenn es sich bewegt
+Particle-System 2: Stößt Particles einmalig aus
