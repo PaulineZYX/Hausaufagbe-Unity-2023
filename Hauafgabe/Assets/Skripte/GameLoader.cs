@@ -17,14 +17,16 @@ public class GameLoader : MonoBehaviour
         StartCoroutine(LoadGameplay());
     }
 
-    //Kommentar: SChließt das spiel und ein debug log um zu überprüfen ob es ein input gibt/ es ausgeführt wird 
+    //Kommentar: SChließt das spiel wenn die methode aufgerufen wird.
+    //Ein debug log um zu überprüfen ob es ein input gibt/es ausgeführt wird 
     public void QuitGame()
     {
         Application.Quit();
         Debug.Log("Bye");
     }
 
-    //Kommentar: Wenn der Esc button ein input bekommt wird man zurück in die MainMenu  scene gebracht und ein debug.log um zu prüfung ob wirklich was passiert
+    //Kommentar: Wenn der Esc button ein input bekommt wird man zurück in die MainMenu scene gebracht 
+    //Ein debug.log um zu prüfung ob wirklich was passiert
     public void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
@@ -35,7 +37,8 @@ public class GameLoader : MonoBehaviour
     }
 
 
-    //Kommentar: Sobald die funktion aufgerufen wird wird im hintergrund die scene "Gameplay" geladen. Mit einer while schleife wird dann geguckt wie weit es geladen ist bevor die scene vollständig geladen wird
+    //Kommentar: Sobald die funktion aufgerufen wird wird im hintergrund die scene "Gameplay" geladen. 
+    //Mit einer while schleife wird dann geguckt wie weit es geladen ist bevor die scene vollständig geladen wird
     IEnumerator LoadGameplay()
     {
         AsyncOperation loadGame = SceneManager.LoadSceneAsync("GamePlay");
